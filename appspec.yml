@@ -5,6 +5,6 @@ files:
     destination: D:\temp
 hooks:
   BeforeInstall:
-    - location: call msiexec.exe /a "\LINSIDataSyncCDA.2.20.0.487.msi"
+    - location:  \LINSIDataSyncCDA.2.20.0.487.msi
       timeout: 900
-      runas: localhost\Administrator
+      runas: call msiexec.exe /a
