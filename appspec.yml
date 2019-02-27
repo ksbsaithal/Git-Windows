@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: \LINSIDataSyncCDA.2.20.0.487.msi
-    destination: C:\temp
+    destination: 'C:\temp'
 
 - name: Install MSI
       win_package: 
