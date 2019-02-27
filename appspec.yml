@@ -2,9 +2,9 @@ version: 0.0
 os: windows
 files:
   - source: \LINSIDataSyncCDA.2.20.0.487.msi
-    destination: 'C:\temp'
-
-- name: Install MSI
-      win_package: 
-        path: 'C:\temp\LINSIDataSyncCDA.2.20.0.487.msi'
-        state: present
+    destination: D:\temp
+hooks:
+  BeforeInstall:
+    - location: \LINSIDataSyncCDA.2.20.0.487.msi
+      timeout: 900
+      runas: localhost\Administrator
