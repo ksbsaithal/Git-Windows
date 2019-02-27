@@ -1,8 +1,10 @@
-name: Install MSI 
-  hosts: all 
- 
-  tasks:
-        - name: Install MSI
+version: 0.0
+os: windows
+files:
+  - source: \LINSIDataSyncCDA.2.20.0.487.msi
+    destination: C:\temp
+
+- name: Install MSI
       win_package: 
-        path: /LINSIDataSyncCDA.2.20.0.487
-        
+        path: 'C:\temp\LINSIDataSyncCDA.2.20.0.487.msi'
+        state: present
