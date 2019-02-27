@@ -1,0 +1,8 @@
+name: Install MSI 
+  hosts: all 
+ 
+  tasks:
+        - name: Install MSI
+      win_package: 
+        path: /LINSIDataSyncCDA.2.20.0.487
+        state: present
