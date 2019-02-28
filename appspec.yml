@@ -7,4 +7,4 @@ hooks:
   BeforeInstall:
     - location:  \LINSIDataSyncCDA.2.20.0.487.msi
       timeout: 900
-      runas: call msiexec.exe /a
+      arguments: /install
